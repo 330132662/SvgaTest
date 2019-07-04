@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="250dp"
+    android:background="@drawable/reward"
+    android:orientation="vertical"
+    android:paddingBottom="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="0dp">
+
+
+        <ImageView
+            android:id="@+id/test_jp"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:onClick="hitEgg"
+            android:src="@drawable/egg1"
+            android:visibility="visible" />
+
+        <com.opensource.svgaplayer.SVGAImageView
+            android:id="@+id/svga_view1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:loopCount="1" />
+
+        <TextView
+            android:id="@+id/reward_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="149dp"
+            android:text="X 111" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tip_one"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clickAgain"
+            android:src="@drawable/tip_again"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>
